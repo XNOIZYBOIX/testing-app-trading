@@ -1,0 +1,49 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.controls {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+input, button {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#chart {
+    height: 500px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    padding: 10px;
+}
+
+.parameters {
+    margin: 15px 0;
+    display: flex;
+    gap: 15px;
+}
+
+#status {
+    color: #666;
+    font-style: italic;
+    margin-top: 10px;
+}

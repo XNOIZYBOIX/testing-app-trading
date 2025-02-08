@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stock Market Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Stock Market Predictor</h1>
+        
+        <div class="controls">
+            <input type="text" id="symbol" placeholder="Enter stock symbol (e.g. AAPL)">
+            <button onclick="loadStockData()">Load Data</button>
+            <button onclick="trainModel()">Train Model</button>
+            <button onclick="getPredictions()">Predict</button>
+        </div>
+
+        <div id="chart"></div>
+        
+        <div class="parameters">
+            <label>Lookback Days: <input type="number" id="lookback" value="60"></label>
+            <label>Prediction Days: <input type="number" id="predDays" value="7"></label>
+        </div>
+
+        <div id="status"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
